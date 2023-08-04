@@ -54,13 +54,13 @@ for row in range(3):
     button_row = []
     for col in range(3):
         button = tk.Button(root, text=" ", font=("Helvetica", 20),
-                           width=5, height=2, command=lambda row=row, col=col: click_button(row, col))
+                        width=5, height=2, command=lambda row=row, col=col: click_button(row, col))
         button.grid(row=row, column=col, sticky="nsew")
         button_row.append(button)
     buttons.append(button_row)
 
 reset_button = tk.Button(root, text="Reset", font=("Helvetica", 20),
-                         width=5, height=2, command=reset_game)
+                        width=5, height=2, command=reset_game)
 reset_button.grid(row=3, column=0, columnspan=3, sticky="nsew")
 
 root.mainloop()
